@@ -1,0 +1,139 @@
+.container {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 400px;
+	min-height: 40px;
+	display: flex;
+	align-items: center;
+	/* gap: .5em;
+	padding: .5em; */
+	padding: 7px 10px 5px 10px;
+	outline: none;
+	
+
+	background: #FFFFFF;
+	border: 1px solid #C1C1C1;
+	border-radius: 10px;
+}
+
+.value {
+	flex-grow: 1;
+	display: flex;
+	/* gap: .7em; */
+	flex-wrap: wrap;
+}
+
+.arrow {
+	margin-top: -7px;
+}
+
+.divider {
+	background-color: #777;
+	align-self: stretch;
+	width: .05em;
+}
+
+.options {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+	max-height: 400px;
+	overflow-y: auto;
+	width: 100%;
+	left: 0;
+	top: calc(100% + 8px);
+	z-index: 100;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 32px rgba(51, 51, 51, 0.15);
+	border-radius: 12px;
+}
+
+.show {
+	display: block;
+}
+
+.option {
+	padding: 14px 17px ;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #F4F4F4;
+}
+
+.selected {
+	/* background-color: hsl(200, 100%, 70%); */
+}
+
+.highlighted {
+	background-color: #f8f8f8;
+	/* color: white; */
+}
+
+.option-badge {
+	display: flex;
+	align-items: center;
+	/* border: .05em solid #777;
+	border-radius: .25em;
+	background: none; */
+	padding: 6px 14px 6px 12px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	gap: .25em;
+	cursor: pointer;
+	outline: none;
+
+	background: #F4F4F4;
+	border-radius: 8px;
+	border: none;
+
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 12px;
+	transition: all 0.3s;
+}
+
+.option-badge:hover,
+.option-badge:focus {
+	opacity: 0.7;
+}
+
+
+.option-badge >.remove-btn {
+	font-size: 1.5em;
+	color: #333333;
+}
+
+.text-label {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	margin-left: 9.5px;
+}
+
+.checkbox-inner {
+	display: inline-block;
+	margin-left: auto;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	background: #FFFFFF;
+	border: 2px solid #C1C1C1;
+	border-radius: 6px;
+	/* transition: all 0.15s; */
+}
+
+.active {
+	background: #005FFD;
+	border: 2px solid #0049D9;
+}
+
+.checkbox-inner>svg {
+	position: absolute;
+	top: 5px;
+	right: 3px;
+	/* fill: white; */
+
+}
