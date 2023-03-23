@@ -13,7 +13,7 @@ const options = [
 ]
 
 export default function App(): JSX.Element {
-  const [valueMultiple, setValueMultiple] = useState<SelectOption[]>([options[0]])
+  const [valueMultiple, setValueMultiple] = useState<SelectOption[]>([])
 
   return (
     <div className={styles.wrapper}>
